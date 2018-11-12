@@ -42,10 +42,11 @@ function appendThisLinkToTheHeadTag(src) {
   }
   */
 
-  const thisIsALegacyBrowser = !('serviceWorker' in navigator);
+  const thisIsALegacyBrowser = !('Promise' in window)
   // Reference: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/serviceWorker#Examples
   
   if (thisIsALegacyBrowser) {
+    console.log("legacy")
     appendThisScriptToTheBodyTag(polyfills.css.variables, function() { cssVars() });
     
     appendThisScriptToTheBodyTag(polyfills.css.grid)
