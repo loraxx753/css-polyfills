@@ -1,5 +1,5 @@
 {
-  "name": "@dabelcher/css-polyfills",
+  "name": "@loraxx753/css-polyfills",
   "version": "1.0.0",
   "description": "1. Clone this repository 1. Run `npm i -g http-server json-server` 1. Open this repo in terminal and run `http-server .` ",
   "main": "script.js",

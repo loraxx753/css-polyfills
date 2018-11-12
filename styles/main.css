@@ -69,3 +69,7 @@ code {
 ie-warning {
     display: none;
 }
+
+ie-preview {
+    display: block;
+}

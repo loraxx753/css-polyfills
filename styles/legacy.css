@@ -5,3 +5,7 @@ details {
 ie-warning {
     display: block;
 }
+
+ie-preview {
+    display: none;
+}
