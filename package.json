@@ -1,7 +1,7 @@
 {
-  "name": "@dabelcher/stock-stalk",
+  "name": "@dabelcher/css-polyfills",
   "version": "1.0.0",
-  "description": "1. Clone this repository 1. Run `npm i -g http-server json-server` 1. Open this repo in terminal and run `http-server .` 1. To deploy a one off copy/production, run `surge .`     * [More info on `surge`](https://surge.sh/)",
+  "description": "1. Clone this repository 1. Run `npm i -g http-server json-server` 1. Open this repo in terminal and run `http-server .` ",
   "main": "script.js",
   "directories": {
     "lib": "lib"
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/loraxx753/html-template.git"
+    "url": "git+https://github.com/loraxx753/css-polyfills.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/loraxx753/html-template/issues"
+    "url": "https://github.com/loraxx753/css-polyfills/issues"
   },
-  "homepage": "https://github.com/loraxx753/html-template#readme",
+  "homepage": "https://github.com/loraxx753/css-polyfills#readme",
   "devDependencies": {
     "http-server": "^0.11.1"
   }
