@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/loraxx753/html-template#readme",
   "devDependencies": {
-    "http-server": "^0.11.1",
-    "surge": "^0.20.1"
+    "http-server": "^0.11.1"
   }
 }
