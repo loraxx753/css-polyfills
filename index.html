@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stock Stalk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+
+ </head>
+
+<body>
+    <h1>Example of CSS Polyfills</h1>
+    <h2>CSS Grid</h2>
+        <ie-warning bg="yellow">A polyfill had to be loaded since this browser doesn't natively support CSS Grid.</ie-warning>
+
+        <main class="wrapper">
+            <div class="box">A</div>
+            <div class="box">B</div>
+            <div class="box">C</div>
+            <div class="box">D</div>
+            <div class="box">E</div>
+            <div class="box">F</div>
+        </main>
+        <aside>
+        <!-- Reference for below: https://www.w3schools.com/tags/tag_details.asp -->
+        <details>
+            <summary>The CSS (This won't show in IE 11)</summary>
+            <pre>
+                <code>
+                    .wrapper {
+                        display: grid;
+                        grid-template-columns: 100px 100px 100px;
+                        grid-gap: 10px;
+                        background-color: #fff;
+                        color: #444;
+                    }
+                    
+                    .box {
+                        background-color: #444;
+                        color: #fff;
+                        border-radius: 5px;
+                        padding: 20px;
+                        font-size: 150%;
+                    }
+                    
+                    .a {
+                        grid-column-start: 2;
+                        grid-column-end: 3;
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                    }
+                    .b {
+                        grid-column-start: 2;
+                        grid-column-end: 3;
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                    }
+                    .c {
+                        grid-column-start: 3;
+                        grid-column-end: 4;
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                    }
+                    .d {
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                    }
+                    .e {
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                    }
+                    .f {
+                        grid-column-start: 3;
+                        grid-column-end: 4;
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                    }
+                </code>
+            </pre>    
+          </details>
+        </aside>
+        <aside>
+            <h2>CSS Variables</h2>
+            <ie-warning bg="yellow">A polyfill had to be loaded since this browser doesn't natively support CSS Variables.</ie-warning>
+        
+            <p>The current header and body fonts (<a href="https://fonts.google.com/specimen/Raleway">Raleway</a> &amp; <a href="https://fonts.google.com/specimen/Roboto+Slab">Roboto Slab</a>) are declared with CSS Variables.</p>
+            <p>Here's a list that uses CSS varialbes to do its stuff.</p>
+            <h3>Backgrounds</h3>
+            <ul>
+                <li bg="navy" color="silver">background-color: navy</li>
+                <li bg="blue">background-color: blue</li>
+                <li bg="aqua">background-color: aqua</li>
+                <li bg="teal">background-color: teal</li>
+                <li bg="olive">background-color: olive</li>
+                <li bg="green">background-color: green</li>
+                <li bg="lime">background-color: lime</li>
+                <li bg="yellow">background-color: yellow</li>
+                <li bg="orange">background-color: orange</li>
+                <li bg="red">background-color: red</li>
+                <li bg="fuchsia">background-color: fuchsia</li>
+                <li bg="purple">background-color: purple</li>
+                <li bg="maroon">background-color: maroon</li>
+                <li bg="white">background-color: white</li>
+                <li bg="gray">background-color: gray</li>
+                <li bg="silver">background-color: silver</li>
+                <li bg="black" color="white">background-color: black</li>
+            </ul>
+            <h3>Colors</h3>
+            <ul>
+                <li color="navy">color: navy</li>
+                <li color="blue">color: blue</li>
+                <li color="aqua">color: aqua</li>
+                <li color="teal">color: teal</li>
+                <li color="olive">color: olive</li>
+                <li color="green">color: green</li>
+                <li color="lime">color: lime</li>
+                <li color="yellow">color: yellow</li>
+                <li color="orange">color: orange</li>
+                <li color="red">color: red</li>
+                <li color="fuchsia">color: fuchsia</li>
+                <li color="purple">color: purple</li>
+                <li color="maroon">color: maroon</li>
+                <li color="white" bg="black">color: white</li>
+                <li color="silver">color: silver</li>
+                <li color="gray">color: gray</li>
+                <li color="black">color: black</li>
+            </ul>
+            <h3>Borders</h3>
+            <ul>
+                <li stroke="navy">border-color: navy</li>
+                <li stroke="blue">border-color: blue</li>
+                <li stroke="aqua">border-color: aqua</li>
+                <li stroke="teal">border-color: teal</li>
+                <li stroke="olive">border-color: olive</li>
+                <li stroke="green">border-color: green</li>
+                <li stroke="lime">border-color: lime</li>
+                <li stroke="yellow">border-color: yellow</li>
+                <li stroke="orange">border-color: orange</li>
+                <li stroke="red">border-color: red</li>
+                <li stroke="fuchsia">border-color: fuchsia</li>
+                <li stroke="purple">border-color: purple</li>
+                <li stroke="maroon">border-color: maroon</li>
+                <li stroke="white">border-color: white</li>
+                <li stroke="gray">border-color: gray</li>
+                <li stroke="silver">border-color: silver</li>
+                <li stroke="black">border-color: black</li>
+            </ul>
+        </aside>
+        <script defer async src="script.js"></script>
+
+    
+</body>
+
+</html>

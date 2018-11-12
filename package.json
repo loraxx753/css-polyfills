@@ -1,0 +1,31 @@
+{
+  "name": "@dabelcher/stock-stalk",
+  "version": "1.0.0",
+  "description": "1. Clone this repository 1. Run `npm i -g http-server json-server` 1. Open this repo in terminal and run `http-server .` 1. To deploy a one off copy/production, run `surge .`     * [More info on `surge`](https://surge.sh/)",
+  "main": "script.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "http-server",
+    "publish": "surge",
+    "published:list": "surge list",
+    "destroy": "surge teardown",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loraxx753/html-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loraxx753/html-template/issues"
+  },
+  "homepage": "https://github.com/loraxx753/html-template#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "surge": "^0.20.1"
+  }
+}
