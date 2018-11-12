@@ -8,9 +8,6 @@
   },
   "scripts": {
     "start": "http-server",
-    "publish": "surge",
-    "published:list": "surge list",
-    "destroy": "surge teardown",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
